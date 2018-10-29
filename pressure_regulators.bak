@@ -1,38 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:ufcs-rescue
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:esp32_devboard
-LIBS:OpAmps-BJH
+EESchema Schematic File Version 4
 LIBS:ufcs-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -47,18 +15,18 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_01X04 J9
+L ufcs-rescue:CONN_01X04 J9
 U 1 1 593CA2B6
 P 6550 1000
 F 0 "J9" H 6550 1250 50  0000 C CNN
 F 1 "CONN_01X04" V 6650 1000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 1000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 1000 50  0001 C CNN
 F 3 "" H 6550 1000 50  0001 C CNN
 	1    6550 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR031
+L power:+24V #PWR031
 U 1 1 593CA2BD
 P 6350 850
 F 0 "#PWR031" H 6350 700 50  0001 C CNN
@@ -69,7 +37,7 @@ F 3 "" H 6350 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L power:GND #PWR032
 U 1 1 593CA2C6
 P 6350 1150
 F 0 "#PWR032" H 6350 900 50  0001 C CNN
@@ -80,23 +48,23 @@ F 3 "" H 6350 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L Device:R R5
 U 1 1 593CA632
 P 4150 4950
 F 0 "R5" V 4230 4950 50  0000 C CNN
 F 1 "1k6" V 4150 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4080 4950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4080 4950 50  0001 C CNN
 F 3 "" H 4150 4950 50  0001 C CNN
 	1    4150 4950
 	0    1    1    0   
 $EndComp
 $Comp
-L CP1 C1
+L Device:CP1 C1
 U 1 1 593CA639
 P 4400 5200
 F 0 "C1" H 4425 5300 50  0000 L CNN
 F 1 "10u" H 4425 5100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4400 5200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4400 5200 50  0001 C CNN
 F 3 "" H 4400 5200 50  0001 C CNN
 	1    4400 5200
 	1    0    0    -1  
@@ -105,7 +73,7 @@ Wire Wire Line
 	4400 5050 4400 4950
 Connection ~ 4400 4950
 $Comp
-L GND #PWR033
+L power:GND #PWR033
 U 1 1 593CA643
 P 4400 5800
 F 0 "#PWR033" H 4400 5550 50  0001 C CNN
@@ -116,18 +84,18 @@ F 3 "" H 4400 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 J10
+L ufcs-rescue:CONN_01X04 J10
 U 1 1 593CA698
 P 6550 2850
 F 0 "J10" H 6550 3100 50  0000 C CNN
 F 1 "CONN_01X04" V 6650 2850 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 2850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6550 2850 50  0001 C CNN
 F 3 "" H 6550 2850 50  0001 C CNN
 	1    6550 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR034
+L power:+24V #PWR034
 U 1 1 593CA69F
 P 6350 2700
 F 0 "#PWR034" H 6350 2550 50  0001 C CNN
@@ -138,7 +106,7 @@ F 3 "" H 6350 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR035
+L power:GND #PWR035
 U 1 1 593CA6A8
 P 6350 3000
 F 0 "#PWR035" H 6350 2750 50  0001 C CNN
@@ -149,18 +117,18 @@ F 3 "" H 6350 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 J11
+L ufcs-rescue:CONN_01X04 J11
 U 1 1 593CA726
 P 6850 5100
 F 0 "J11" H 6850 5350 50  0000 C CNN
 F 1 "CONN_01X04" V 6950 5100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6850 5100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6850 5100 50  0001 C CNN
 F 3 "" H 6850 5100 50  0001 C CNN
 	1    6850 5100
 	1    0    0    -1  
 $EndComp
 $Comp
-L +24V #PWR036
+L power:+24V #PWR036
 U 1 1 593CA72D
 P 6650 4950
 F 0 "#PWR036" H 6650 4800 50  0001 C CNN
@@ -171,7 +139,7 @@ F 3 "" H 6650 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR037
+L power:GND #PWR037
 U 1 1 593CA736
 P 6650 5250
 F 0 "#PWR037" H 6650 5000 50  0001 C CNN
@@ -196,83 +164,83 @@ PR3_OUT
 Wire Wire Line
 	3750 4950 4000 4950
 $Comp
-L OpAmp-TLV2374 U8
+L OpAmps-BJH:OpAmp-TLV2374 U8
 U 1 1 593CC5C8
 P 4900 950
 F 0 "U8" H 4850 950 60  0000 C CNN
 F 1 "OpAmp-TLV2374" H 4900 1250 60  0001 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4850 950 60  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 950 60  0001 C CNN
 F 3 "" H 4850 950 60  0000 C CNN
 F 4 "TLV2374" H 5050 1150 60  0000 C CNN "Device"
 	1    4900 950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L OpAmp-TLV2374 U8
+L OpAmps-BJH:OpAmp-TLV2374 U8
 U 2 1 593CC608
 P 4900 2800
 F 0 "U8" H 4850 2800 60  0000 C CNN
 F 1 "OpAmp-TLV2374" H 4900 3100 60  0001 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4850 2800 60  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 2800 60  0001 C CNN
 F 3 "" H 4850 2800 60  0000 C CNN
 F 4 "TLV2374" H 5050 3000 60  0000 C CNN "Device"
 	2    4900 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L OpAmp-TLV2374 U8
+L OpAmps-BJH:OpAmp-TLV2374 U8
 U 3 1 593CC658
 P 5550 5050
 F 0 "U8" H 5500 5050 60  0000 C CNN
 F 1 "OpAmp-TLV2374" H 5550 5350 60  0001 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5500 5050 60  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5500 5050 60  0001 C CNN
 F 3 "" H 5500 5050 60  0000 C CNN
 F 4 "TLV2374" H 5700 5250 60  0000 C CNN "Device"
 	3    5550 5050
 	1    0    0    -1  
 $EndComp
 $Comp
-L OpAmp-TLV2374 U8
+L OpAmps-BJH:OpAmp-TLV2374 U8
 U 4 1 593CC6AC
 P 3750 6900
 F 0 "U8" H 3700 6900 60  0000 C CNN
 F 1 "OpAmp-TLV2374" H 3750 7200 60  0001 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 3700 6900 60  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 6900 60  0001 C CNN
 F 3 "" H 3700 6900 60  0000 C CNN
 F 4 "TLV2374" H 3900 7100 60  0000 C CNN "Device"
 	4    3750 6900
 	1    0    0    -1  
 $EndComp
 $Comp
-L OpAmp-TLV2374 U8
+L OpAmps-BJH:OpAmp-TLV2374 U8
 U 5 1 593CC6FC
 P 1350 6800
 F 0 "U8" V 1100 6800 60  0000 C CNN
 F 1 "OpAmp-TLV2374" H 1350 7100 60  0001 C CNN
-F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 1300 6800 60  0001 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1300 6800 60  0001 C CNN
 F 3 "" H 1300 6800 60  0000 C CNN
 F 4 "TLV2374" V 1600 6800 60  0000 C CNN "Device"
 	5    1350 6800
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L Device:R R9
 U 1 1 593CE33C
 P 5000 1350
 F 0 "R9" V 5080 1350 50  0000 C CNN
 F 1 "1k8" V 5000 1350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 1350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 1350 50  0001 C CNN
 F 3 "" H 5000 1350 50  0001 C CNN
 	1    5000 1350
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L Device:R R6
 U 1 1 593CE92B
 P 4300 1550
 F 0 "R6" V 4380 1550 50  0000 C CNN
 F 1 "2k7" V 4300 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4230 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4230 1550 50  0001 C CNN
 F 3 "" H 4300 1550 50  0001 C CNN
 	1    4300 1550
 	-1   0    0    1   
@@ -291,23 +259,23 @@ Connection ~ 4300 1350
 Wire Wire Line
 	5500 950  6350 950 
 $Comp
-L R R10
+L Device:R R10
 U 1 1 593CF7F7
 P 5000 3200
 F 0 "R10" V 5080 3200 50  0000 C CNN
 F 1 "1k8" V 5000 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4930 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4930 3200 50  0001 C CNN
 F 3 "" H 5000 3200 50  0001 C CNN
 	1    5000 3200
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L Device:R R7
 U 1 1 593CF7FE
 P 4300 3400
 F 0 "R7" V 4380 3400 50  0000 C CNN
 F 1 "2k7" V 4300 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4230 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4230 3400 50  0001 C CNN
 F 3 "" H 4300 3400 50  0001 C CNN
 	1    4300 3400
 	-1   0    0    1   
@@ -326,23 +294,23 @@ Wire Wire Line
 Wire Wire Line
 	5500 2800 6350 2800
 $Comp
-L R R11
+L Device:R R11
 U 1 1 593D04D4
 P 5650 5450
 F 0 "R11" V 5730 5450 50  0000 C CNN
 F 1 "1k8" V 5650 5450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 5450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5580 5450 50  0001 C CNN
 F 3 "" H 5650 5450 50  0001 C CNN
 	1    5650 5450
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L Device:R R8
 U 1 1 593D04DB
 P 4950 5650
 F 0 "R8" V 5030 5650 50  0000 C CNN
 F 1 "2k7" V 4950 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4880 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4880 5650 50  0001 C CNN
 F 3 "" H 4950 5650 50  0001 C CNN
 	1    4950 5650
 	-1   0    0    1   
@@ -359,7 +327,7 @@ Connection ~ 4950 5450
 Wire Wire Line
 	4300 4950 4950 4950
 $Comp
-L GND #PWR038
+L power:GND #PWR038
 U 1 1 593D0716
 P 4950 5800
 F 0 "#PWR038" H 4950 5550 50  0001 C CNN
@@ -372,7 +340,7 @@ $EndComp
 Wire Wire Line
 	4400 5350 4400 5800
 $Comp
-L GND #PWR039
+L power:GND #PWR039
 U 1 1 593D0997
 P 4300 3550
 F 0 "#PWR039" H 4300 3300 50  0001 C CNN
@@ -383,7 +351,7 @@ F 3 "" H 4300 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR040
+L power:GND #PWR040
 U 1 1 593D0AE2
 P 4300 1700
 F 0 "#PWR040" H 4300 1450 50  0001 C CNN
@@ -414,7 +382,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 1400 7000 1400
 $Comp
-L GND #PWR041
+L power:GND #PWR041
 U 1 1 593D2A37
 P 800 6800
 F 0 "#PWR041" H 800 6550 50  0001 C CNN
@@ -425,7 +393,7 @@ F 3 "" H 800 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR042
+L power:+5V #PWR042
 U 1 1 593D2A64
 P 1900 6800
 F 0 "#PWR042" H 1900 6650 50  0001 C CNN
@@ -436,29 +404,29 @@ F 3 "" H 1900 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R14
+L Device:R R14
 U 1 1 593D3E88
 P 7000 3400
 F 0 "R14" V 7080 3400 50  0000 C CNN
 F 1 "1k8" V 7000 3400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 3400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 3400 50  0001 C CNN
 F 3 "" H 7000 3400 50  0001 C CNN
 	1    7000 3400
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R15
+L Device:R R15
 U 1 1 593D4024
 P 7000 3800
 F 0 "R15" V 7080 3800 50  0000 C CNN
 F 1 "3k3" V 7000 3800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 3800 50  0001 C CNN
 F 3 "" H 7000 3800 50  0001 C CNN
 	1    7000 3800
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR043
+L power:GND #PWR043
 U 1 1 593D402B
 P 7000 3950
 F 0 "#PWR043" H 7000 3700 50  0001 C CNN
@@ -474,29 +442,29 @@ Wire Wire Line
 	7000 3600 7200 3600
 Connection ~ 7000 3600
 $Comp
-L R R16
+L Device:R R16
 U 1 1 593D4B39
 P 7300 5650
 F 0 "R16" V 7380 5650 50  0000 C CNN
 F 1 "1k8" V 7300 5650 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7230 5650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7230 5650 50  0001 C CNN
 F 3 "" H 7300 5650 50  0001 C CNN
 	1    7300 5650
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R17
+L Device:R R17
 U 1 1 593D4B40
 P 7300 6050
 F 0 "R17" V 7380 6050 50  0000 C CNN
 F 1 "3k3" V 7300 6050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7230 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7230 6050 50  0001 C CNN
 F 3 "" H 7300 6050 50  0001 C CNN
 	1    7300 6050
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR044
+L power:GND #PWR044
 U 1 1 593D4B47
 P 7300 6200
 F 0 "#PWR044" H 7300 5950 50  0001 C CNN
@@ -512,29 +480,29 @@ Wire Wire Line
 	7300 5850 7500 5850
 Connection ~ 7300 5850
 $Comp
-L R R12
+L Device:R R12
 U 1 1 593D4D80
 P 7000 1550
 F 0 "R12" V 7080 1550 50  0000 C CNN
 F 1 "1k8" V 7000 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 1550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 1550 50  0001 C CNN
 F 3 "" H 7000 1550 50  0001 C CNN
 	1    7000 1550
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R13
+L Device:R R13
 U 1 1 593D4D87
 P 7000 1950
 F 0 "R13" V 7080 1950 50  0000 C CNN
 F 1 "3k3" V 7000 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6930 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6930 1950 50  0001 C CNN
 F 3 "" H 7000 1950 50  0001 C CNN
 	1    7000 1950
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR045
+L power:GND #PWR045
 U 1 1 593D4D8E
 P 7000 2100
 F 0 "#PWR045" H 7000 1850 50  0001 C CNN
