@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ufcs-rescue)(type Legacy)(uri ${KIPRJMOD}/ufcs-rescue.lib)(options "")(descr ""))
+  (lib (name esp32_devboard)(type Legacy)(uri ${KIPRJMOD}/libs/esp32_devboard.lib)(options "")(descr ""))
+  (lib (name OpAmps-BJH)(type Legacy)(uri ${KIPRJMOD}/libs/OpAmps-BJH.lib)(options "")(descr ""))
+)
