@@ -468,52 +468,52 @@ $EndComp
 $Comp
 L ufcs-rescue:CONN_01X03 J2
 U 1 1 593A5184
-P 2150 2000
-F 0 "J2" H 2150 2200 50  0000 C CNN
-F 1 "CONN_01X03" V 2250 2000 50  0000 C CNN
-F 2 "connectors_ufcs:PINHEAD1-3" H 2150 2000 50  0001 C CNN
-F 3 "" H 2150 2000 50  0001 C CNN
-	1    2150 2000
+P 1750 2000
+F 0 "J2" H 1750 2200 50  0000 C CNN
+F 1 "CONN_01X03" V 1850 2000 50  0000 C CNN
+F 2 "connectors_ufcs:PINHEAD1-3" H 1750 2000 50  0001 C CNN
+F 3 "" H 1750 2000 50  0001 C CNN
+	1    1750 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR08
 U 1 1 593A5417
-P 1800 1900
-F 0 "#PWR08" H 1800 1750 50  0001 C CNN
-F 1 "+12V" H 1800 2040 50  0000 C CNN
-F 2 "" H 1800 1900 50  0001 C CNN
-F 3 "" H 1800 1900 50  0001 C CNN
-	1    1800 1900
+P 1400 1900
+F 0 "#PWR08" H 1400 1750 50  0001 C CNN
+F 1 "+12V" H 1400 2040 50  0000 C CNN
+F 2 "" H 1400 1900 50  0001 C CNN
+F 3 "" H 1400 1900 50  0001 C CNN
+	1    1400 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+24V #PWR07
 U 1 1 593A5548
-P 1650 2100
-F 0 "#PWR07" H 1650 1950 50  0001 C CNN
-F 1 "+24V" H 1650 2240 50  0000 C CNN
-F 2 "" H 1650 2100 50  0001 C CNN
-F 3 "" H 1650 2100 50  0001 C CNN
-	1    1650 2100
+P 1250 2100
+F 0 "#PWR07" H 1250 1950 50  0001 C CNN
+F 1 "+24V" H 1250 2240 50  0000 C CNN
+F 2 "" H 1250 2100 50  0001 C CNN
+F 3 "" H 1250 2100 50  0001 C CNN
+	1    1250 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR09
 U 1 1 593A5711
-P 1900 2200
-F 0 "#PWR09" H 1900 1950 50  0001 C CNN
-F 1 "GND" H 1900 2050 50  0000 C CNN
-F 2 "" H 1900 2200 50  0001 C CNN
-F 3 "" H 1900 2200 50  0001 C CNN
-	1    1900 2200
+P 1500 2200
+F 0 "#PWR09" H 1500 1950 50  0001 C CNN
+F 1 "GND" H 1500 2050 50  0000 C CNN
+F 2 "" H 1500 2200 50  0001 C CNN
+F 3 "" H 1500 2200 50  0001 C CNN
+	1    1500 2200
 	1    0    0    -1  
 $EndComp
 Text Notes 7450 750  0    118  ~ 0
 Valve drivers and connectors
 Text Notes 1000 2900 0    118  ~ 0
 Power inputs \n& voltage converters
-Text Notes 650  7900 0    118  ~ 0
+Text Notes 650  7950 0    118  ~ 0
 Pump drivers and connectors
 $Comp
 L power:+12V #PWR028
@@ -865,13 +865,13 @@ Wire Wire Line
 Wire Wire Line
 	2000 7550 2200 7550
 Wire Wire Line
-	1800 1900 1950 1900
+	1400 1900 1550 1900
 Wire Wire Line
-	1900 2200 1900 2000
+	1500 2200 1500 2000
 Wire Wire Line
-	1900 2000 1950 2000
+	1500 2000 1550 2000
 Wire Wire Line
-	1950 2100 1650 2100
+	1550 2100 1250 2100
 Wire Wire Line
 	2850 4900 3750 4900
 Wire Wire Line
@@ -1093,4 +1093,22 @@ Wire Wire Line
 Connection ~ 3450 4600
 Wire Wire Line
 	3450 4600 2850 4600
+Text Notes 2000 2150 0    39   ~ 0
+Connect a 12->24V step-up\nconverter here if using Parker\npressure regulators. Not necessary\notherwise.
+Wire Notes Line
+	7150 800  10400 800 
+Wire Notes Line
+	10400 800  10400 6200
+Wire Notes Line
+	10400 6200 7150 6200
+Wire Notes Line
+	7150 6200 7150 800 
+Wire Notes Line
+	700  7750 2900 7750
+Wire Notes Line
+	2900 6050 700  6050
+Wire Notes Line
+	700  6050 700  7750
+Wire Notes Line
+	2900 6050 2900 7750
 $EndSCHEMATC
