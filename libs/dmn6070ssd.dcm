@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMN6070SSD
+D 60V Vds, 3.3A Id, 80mOhm Rds, Dual N-Channel MOSFET, SO-8
+K Dual N-Channel MOSFET
+F https://www.mouser.com/datasheet/2/115/DMN6070SSD-271635.pdf
+$ENDCMP
+#
+#End Doc Library
