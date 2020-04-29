@@ -92,17 +92,6 @@ F 4 "On Espressif ESP32 devKitC, this cannot be connected to an external 5V supp
 	1    0    0    -1  
 $EndComp
 $Comp
-L ufcs-rescue:BARREL_JACK J1
-U 1 1 5936D142
-P 1200 1150
-F 0 "J1" H 1200 1345 50  0000 C CNN
-F 1 "BARREL_JACK" H 1050 1000 50  0000 C CNN
-F 2 "esp32:PJ-063AH" H 1200 1150 50  0001 C CNN
-F 3 "" H 1200 1150 50  0001 C CNN
-	1    1200 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L ufcs-rescue:CONN_01X02 J6
 U 1 1 5936D501
 P 3050 6550
@@ -146,7 +135,6 @@ F 3 "" H 1500 1050 50  0001 C CNN
 	1    1500 1050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1500 1150
 $Comp
 L power:GND #PWR05
 U 1 1 593761A5
@@ -367,34 +355,34 @@ $EndComp
 $Comp
 L power:+3.3V #PWR016
 U 1 1 5939B028
-P 3900 1150
-F 0 "#PWR016" H 3900 1000 50  0001 C CNN
-F 1 "+3.3V" H 3900 1290 50  0000 C CNN
-F 2 "" H 3900 1150 50  0001 C CNN
-F 3 "" H 3900 1150 50  0001 C CNN
-	1    3900 1150
+P 4800 6300
+F 0 "#PWR016" H 4800 6150 50  0001 C CNN
+F 1 "+3.3V" H 4800 6440 50  0000 C CNN
+F 2 "" H 4800 6300 50  0001 C CNN
+F 3 "" H 4800 6300 50  0001 C CNN
+	1    4800 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5939B123
-P 3750 1450
-F 0 "R1" V 3830 1450 50  0000 C CNN
-F 1 "1k6" V 3750 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3680 1450 50  0001 C CNN
-F 3 "" H 3750 1450 50  0001 C CNN
-	1    3750 1450
+P 4700 6550
+F 0 "R1" V 4780 6550 50  0000 C CNN
+F 1 "1k6" V 4700 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4630 6550 50  0001 C CNN
+F 3 "" H 4700 6550 50  0001 C CNN
+	1    4700 6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5939B341
-P 4050 1450
-F 0 "R2" V 4130 1450 50  0000 C CNN
-F 1 "1k6" V 4050 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3980 1450 50  0001 C CNN
-F 3 "" H 4050 1450 50  0001 C CNN
-	1    4050 1450
+P 4900 6550
+F 0 "R2" V 4980 6550 50  0000 C CNN
+F 1 "1k6" V 4900 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4830 6550 50  0001 C CNN
+F 3 "" H 4900 6550 50  0001 C CNN
+	1    4900 6550
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4200 2500
@@ -776,26 +764,7 @@ Wire Wire Line
 	9950 1050 9700 1050
 Connection ~ 9950 1050
 Wire Wire Line
-	3550 1700 3750 1700
-Wire Wire Line
-	3600 1800 4050 1800
-Wire Wire Line
-	3750 1150 3900 1150
-Wire Wire Line
-	3750 1150 3750 1300
-Wire Wire Line
-	4050 1150 4050 1300
-Connection ~ 3900 1150
-Wire Wire Line
-	3750 1600 3750 1700
-Connection ~ 3750 1700
-Wire Wire Line
-	4050 1600 4050 1800
-Connection ~ 4050 1800
-Wire Wire Line
-	3550 1700 3550 4600
-Wire Wire Line
-	3600 1800 3600 4700
+	4700 6700 4700 6750
 Wire Wire Line
 	1400 1900 1550 1900
 Wire Wire Line
@@ -808,10 +777,6 @@ Wire Wire Line
 	2850 4900 3750 4900
 Wire Wire Line
 	2850 5000 3700 5000
-Wire Wire Line
-	3550 4600 3450 4600
-Wire Wire Line
-	3600 4700 3400 4700
 Wire Wire Line
 	4200 2400 3300 2400
 Wire Wire Line
@@ -941,12 +906,6 @@ Wire Wire Line
 	9950 2300 9950 2350
 Wire Wire Line
 	9950 1050 9950 1100
-Wire Wire Line
-	3900 1150 4050 1150
-Wire Wire Line
-	3750 1700 4200 1700
-Wire Wire Line
-	4050 1800 4200 1800
 Connection ~ 1100 4100
 Wire Wire Line
 	1100 4100 1100 4200
@@ -965,16 +924,6 @@ F 3 "" H 1100 3800 50  0001 C CNN
 $EndComp
 NoConn ~ 2850 5400
 NoConn ~ 2850 5500
-Wire Wire Line
-	3400 4700 3400 5600
-Connection ~ 3400 4700
-Wire Wire Line
-	3400 4700 2850 4700
-Wire Wire Line
-	3450 4600 3450 5450
-Connection ~ 3450 4600
-Wire Wire Line
-	3450 4600 2850 4600
 Text Notes 2000 2150 0    39   ~ 0
 Connect a 12->24V step-up\nconverter here if using Parker\npressure regulators. Not necessary\notherwise.
 Wire Notes Line
@@ -1011,10 +960,6 @@ Wire Wire Line
 	3750 5150 3850 5150
 Wire Wire Line
 	3700 5300 3850 5300
-Wire Wire Line
-	3850 5450 3450 5450
-Wire Wire Line
-	3400 5600 3850 5600
 Wire Wire Line
 	5350 5150 5200 5150
 Wire Wire Line
@@ -1110,4 +1055,84 @@ Wire Notes Line
 	900  6050 900  7750
 Wire Notes Line
 	900  7750 3300 7750
+$Comp
+L rclamp:RClamp0582BQ D3
+U 1 1 5EAC9562
+P 4800 7100
+F 0 "D3" H 4978 7153 60  0000 L CNN
+F 1 "RClamp0582BQ" H 4978 7047 60  0000 L CNN
+F 2 "digikey-footprints:SOT-523" H 4800 7100 60  0001 C CNN
+F 3 "https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/440000001Lzx/0M5l0VFdFhBLS7TSRfd1I2V77GSkvtksC9b.1bnFtjQ" H 4800 7100 60  0001 C CNN
+	1    4800 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4600 6750 0    60   Input ~ 0
+SDA
+Text GLabel 5000 6750 2    60   Input ~ 0
+SCL
+Text GLabel 4200 1800 0    60   Input ~ 0
+SCL
+Text GLabel 2850 4600 2    60   Input ~ 0
+SDA
+Text GLabel 2850 4700 2    60   Input ~ 0
+SCL
+Text GLabel 3850 5450 0    60   Input ~ 0
+SDA
+Text GLabel 3850 5600 0    60   Input ~ 0
+SCL
+Text GLabel 4200 1700 0    60   Input ~ 0
+SDA
+$Comp
+L power:GND #PWR0102
+U 1 1 5EB39520
+P 4800 7400
+F 0 "#PWR0102" H 4800 7150 50  0001 C CNN
+F 1 "GND" H 4800 7250 50  0000 C CNN
+F 2 "" H 4800 7400 50  0001 C CNN
+F 3 "" H 4800 7400 50  0001 C CNN
+	1    4800 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6750 4700 6750
+Connection ~ 4700 6750
+Wire Wire Line
+	4700 6750 4700 6800
+Wire Wire Line
+	4900 6700 4900 6750
+Wire Wire Line
+	4900 6750 5000 6750
+Connection ~ 4900 6750
+Wire Wire Line
+	4900 6750 4900 6800
+Wire Wire Line
+	4700 6400 4700 6300
+Wire Wire Line
+	4700 6300 4800 6300
+Wire Wire Line
+	4800 6300 4900 6300
+Wire Wire Line
+	4900 6300 4900 6400
+Connection ~ 4800 6300
+Text Notes 4200 7950 0    118  ~ 0
+i2c protection
+Wire Notes Line
+	5750 7700 4050 7700
+Wire Notes Line
+	4050 7700 4050 6050
+Wire Notes Line
+	4050 6050 5750 6050
+Wire Notes Line
+	5750 6050 5750 7700
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5EBC6617
+P 1200 1150
+F 0 "J1" H 1100 1350 50  0000 C CNN
+F 1 "Barrel_Jack" H 1100 950 50  0000 C CNN
+F 2 "connectors_ufcs:PJ-063AH" H 1250 1110 50  0001 C CNN
+F 3 "~" H 1250 1110 50  0001 C CNN
+	1    1200 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
